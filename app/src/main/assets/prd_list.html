@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="user-scalable=yes, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width" />
+    <meta name="format-detection" content="telephone=no">
+    <title>일일퀘스트</title>
+    <link rel="stylesheet" type="text/css" href="css/mobile_default.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="css/flexslider.css"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+</head>
+<body>
+<div id="wrap">
+	<!-- container -->
+	<div id="container">
+		<div class="shop_list">
+			<ul id="hot_album_list">
+				<li>qwe</li>
+			</ul>
+		</div>
+	</div>
+	<!-- //container -->
+	<script type="text/javascript">
+		var httpRequest;
+		if (window.XMLHttpRequest) { // 모질라, 사파리등 그외 브라우저, ...
+			httpRequest = new XMLHttpRequest();
+		} else if (window.ActiveXObject) { // IE 8 이상
+			httpRequest = new ActiveXObject("Microsoft.XMLHTTP");
+		}
+		$.ajax({
+			type: "POST",
+			url: "http://zoro49.cafe24.com/DB_dayquest/store_list.php?",
+			data: "",
+			dataType: "json",
+			success: function(data) {
+				$(data).each(function(idx,obj){
+					console.log(idx,obj);
+					var html =  "<li>"+obj.store_name+"</li>";
+					$("#hot_album_list").append(html);
+				});
+			},
+			error: function(jqXHR,textStatus,errorThrown) {
+				alert(textStatus+", "+errorThrown);
+			}
+		});
+	</script>
+</div>
+</body>
+</html>

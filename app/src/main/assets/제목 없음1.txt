@@ -1,0 +1,110 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+  <title>Geolocation Demo</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+</head>
+<body> 
+ 
+  <h1>Geolocation Demo</h1>
+  <div id="tripmeter"> 
+    <p> 
+      시작 위치 (위도, 경도):<br/> 
+      <span id="startLat"></span>°, <span id="startLon"></span>°
+    </p> 
+    <p> 
+      현재 위치  (위도, 경도):<br/> 
+      <span id="currentLat"></span>°, <span id="currentLon"></span>°
+    </p> 
+    <p> 
+      시작 위치로 부터의 거리:<br/> 
+      <span id="distance">0</span> km
+    </p> 
+  </div> 
+ 
+  <script> 
+    window.onload = function() {
+      var startPos;
+       
+      if (navigator.geolocation) { 
+        navigator.geolocation.getCurrentPosition(function(position) {
+          startPos = position;
+          document.getElementById("startLat").innerHTML = startPos.coords.latitude;
+          document.getElementById("startLon").innerHTML = startPos.coords.longitude;
+        }, function(error) {
+          alert("Error occurred. Error code: "+error.code);
+        });
+    
+        navigator.geolocation.watchPosition(function(position) {
+          document.getElementById("currentLat").innerHTML = 37. 55 32241;
+          document.getElementById("currentLon").innerHTML = 127.0464868;
+          document.getElementById("distance").innerHTML =
+            calculateDistance(startPos.coords.latitude, startPos.coords.longitude,
+                              37.5532241, 127.0464868);
+        });
+      }
+    };
+    // Reused code - copyright Moveable Type Scripts - retrieved May 4, 2010.
+    // http://www.movable-type.co.uk/scripts/latlong.html
+    // Under Creative Commons License http://creativecommons.org/licenses/by/3.0/
+    function calculateDistance(lat1, lon1, lat2, lon2) {
+      var R = 6371; // km
+      var dLat = (lat2-lat1).toRad();
+      var dLon = (lon2-lon1).toRad(); 
+      var a = Math.sin(dLat/2) * Math.sin(dLat/2) +
+              Math.cos(lat1.toRad()) * Math.cos(lat2.toRad()) * 
+              Math.sin(dLon/2) * Math.sin(dLon/2); 
+      var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a)); 
+      var d = R * c;
+      return d;
+    }
+    Number.prototype.toRad = function() {
+      return this * Math.PI / 180;
+    }
+  </script> 
+ 
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="user-scalable=yes, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width" />
+    <meta name="format-detection" content="telephone=no">
+    <title>일일퀘스트</title>
+    <link rel="stylesheet" type="text/css" href="css/mobile_default.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="css/flexslider.css"/>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/design.js"></script>
+    <script type="text/javascript" src="js/jquery.flexslider.js"></script>
+</head>
+<body>
+<div id="wrap">
+	<!-- container -->
+	<div id="container">
+		<div class="shop_list">
+			<ul>
+				
+			</ul>
+		</div>
+	</div>
+	<!-- //container -->
+	<script type="text/javascript">
+		var posX;
+		var posY;
+		function init(){
+			window.android.myPosition();
+			window.android.ShopShow();
+		}init();
+		function setMessage(arg, arg2) {
+			posX = arg.substring(0, 10);
+			posY = arg2.substring(0, 10);
+			$(".shop_list").html(posX+","+posY);
+		};
+	</script>
+</div>
+</body>
+</html>

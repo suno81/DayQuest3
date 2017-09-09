@@ -1,0 +1,83 @@
+@charset "utf-8";
+
+@font-face{
+font-family: "NanumBarunGothic";
+src: url(../fonts/NanumBarunGothic.eot);
+src: url(../fonts/NanumBarunGothic.eot?#iefix) format('embedded-opentype'),
+       url(../fonts/NanumBarunGothic.woff) format('woff');
+}
+
+@font-face{
+font-family: "NanumBarunGothicBold";
+src: url(../fonts/NanumBarunGothicBold.eot);
+src: url(../fonts/NanumBarunGothicBold.eot?#iefix) format('embedded-opentype'),
+       url(../fonts/NanumBarunGothicBold.woff) format('woff');
+}
+
+@font-face{
+font-family: "nm";
+src: url(../fonts/NanumMyeongjo.eot);
+src: url(../fonts/NanumMyeongjo.eot?#iefix) format('embedded-opentype'),
+       url(../fonts/NanumMyeongjo.woff) format('woff');
+}
+
+@font-face{
+font-family: "nmb";
+font-weight:bold;
+src: url(../fonts/NanumMyeongjoBold.eot);
+src: url(../fonts/NanumMyeongjoBold.eot?#iefix) format('embedded-opentype'),
+       url(../fonts/NanumMyeongjoBold.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Nanum Gothic';
+  font-style: normal;
+  font-weight: 700;
+  src: url(../fonts/NanumGothic-Bold.eot);
+  src: url(../fonts/NanumGothic-Bold.eot?#iefix) format('embedded-opentype'),
+       url(../fonts/NanumGothic-Bold.woff2) format('woff2'),
+       url(../fonts/NanumGothic-Bold.woff) format('woff'),
+       url(../fonts/NanumGothic-Bold.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Nanum Gothic';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/NanumGothic-Regular.eot);
+  src: url(../fonts/NanumGothic-Regular.eot?#iefix) format('embedded-opentype'),
+       url(../fonts/NanumGothic-Regular.woff2) format('woff2'),
+       url(../fonts/NanumGothic-Regular.woff) format('woff'),
+       url(../fonts/NanumGothic-Regular.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Nanum Gothic';
+  font-style: normal;
+  font-weight: 800;
+  src: url(../fonts/NanumGothic-ExtraBold.eot);
+  src: url(../fonts/NanumGothic-ExtraBold.eot?#iefix) format('embedded-opentype'),
+       url(../fonts/NanumGothic-ExtraBold.woff2) format('woff2'),
+       url(../fonts/NanumGothic-ExtraBold.woff) format('woff'),
+       url(../fonts/NanumGothic-ExtraBold.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Nanum Gothic';
+  font-style: normal;
+  font-weight: normal;
+  src: url(../fonts/NanumGothic.eot);
+  src: url(../fonts/NanumGothic.eot?#iefix) format('embedded-opentype'),
+       url(../fonts/NanumGothic.woff2) format('woff2'),
+       url(../fonts/NanumGothic.woff) format('woff'),
+       url(../fonts/NanumGothic.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Nanum Myeongjo';
+  font-style: normal;
+  font-weight: normal;
+  src: url(../fonts/NanumMyeongjo.eot);
+  src: url(../fonts/NanumMyeongjo.eot?#iefix) format('embedded-opentype'),
+       url(../fonts/NanumMyeongjo.woff2) format('woff2'),
+       url(../fonts/NanumMyeongjo.woff) format('woff'),
+       url(../fonts/NanumMyeongjo.ttf) format('truetype');
+}

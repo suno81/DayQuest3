@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="user-scalable=yes, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width" />
+    <meta name="format-detection" content="telephone=no">
+    <title>일일퀘스트</title>
+    <link rel="stylesheet" type="text/css" href="css/mobile_default.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="css/flexslider.css"/>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/design.js"></script>
+    <script type="text/javascript" src="js/jquery.flexslider.js"></script>
+</head>
+<body>
+<div id="wrap">
+	<!-- container -->
+	<div id="container">
+		<div class="login_wrap">
+			<div class="logo">
+				<div class="test_logo"></div>
+			</div>
+			<ul class="input_list">
+				<li><div class="input_box"><input type="text" id="email" placeholder="이메일" /></div></li>
+				<li><div class="input_box"><input type="text" id="name" placeholder="이름" /></div></li>
+				<li><div class="input_box"><input type="password" id="pw" placeholder="비밀번호" /></div></li>
+				<li><div class="input_box"><input type="password" id="pwok" placeholder="비밀번호 확인" /></div></li>
+			</ul>
+			<div class="login_btn">
+				<a href="javascript:;" class="join_ok">회원가입 완료</a>
+			</div>
+		</div>
+	</div>
+	<!-- //container -->
+	<script type="text/javascript">
+		$(".join_ok").on("click", function(){
+			if($("#pw").val() == $("#pwok").val()){
+				window.android.join($("#email").val(), $("#pw").val(), $("#name").val());//로그인 id, pw 전달
+			}else{
+				$("#pwok").val("");
+				alert("패스워드가 틀립니다.");
+			}
+		});
+	</script>
+</div>
+</body>
+</html>

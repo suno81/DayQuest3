@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "60089024250",
+    "firebase_url": "https://dayquest-dcdbf.firebaseio.com",
+    "project_id": "dayquest-dcdbf",
+    "storage_bucket": "dayquest-dcdbf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:60089024250:android:a6bda8eff47f6d33",
+        "android_client_info": {
+          "package_name": "com.example.nklee.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "60089024250-vj0lt31h3n65f7km5sqp5n1u4ts60jbb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.nklee.myapplication",
+            "certificate_hash": "d6f35c5e761000b53e609db1f6e2073bdacc5a71"
+          }
+        },
+        {
+          "client_id": "60089024250-itdmcnc9455ahmi6bcfr379i3hu4vihh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyByh1TFDDDk3DJLyxPINkYkpKT_rXzk1uo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "60089024250-itdmcnc9455ahmi6bcfr379i3hu4vihh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
