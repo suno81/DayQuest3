@@ -1,0 +1,58 @@
+{
+  "project_info": {
+    "project_number": "1040559593690",
+    "firebase_url": "https://project-jm-889be.firebaseio.com",
+    "project_id": "project-jm-889be",
+    "storage_bucket": "project-jm-889be.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1040559593690:android:a6bda8eff47f6d33",
+        "android_client_info": {
+          "package_name": "com.example.nklee.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1040559593690-5caqrq2orppgh3v5q3admg5tgl6a2k0u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.nklee.myapplication",
+            "certificate_hash": "350abbddeed55d87e8399f300654f92ce08f34a0"
+          }
+        },
+        {
+          "client_id": "1040559593690-bc8vvvr17e3i96kvlpgcf31bg1hnl98a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBVE9hqSPieN_zy6T0Y1a8H2YTFhYSKXQ8"
+        },
+        {
+          "current_key": "AIzaSyA-9mf7qTfk8e4MyP1wbdONltDfuJNbwC0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1040559593690-bc8vvvr17e3i96kvlpgcf31bg1hnl98a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
